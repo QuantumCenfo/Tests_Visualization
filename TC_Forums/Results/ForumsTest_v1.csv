@@ -1,0 +1,17 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1759887859206,80,POST /auth/login,200,,TG - Forums 1-1,text,true,,1202,264,1,1,http://localhost:8080/auth/login,80,0,2
+1759887859286,10,Post - Insert forum,200,,TG - Forums 1-1,text,true,,1001,676,1,1,http://localhost:8080/forums,10,0,0
+1759887859713,73,POST /auth/login,200,,TG - Forums 1-2,text,true,,1202,264,1,1,http://localhost:8080/auth/login,73,0,1
+1759887859786,13,Post - Insert forum,200,,TG - Forums 1-2,text,true,,1119,794,1,1,http://localhost:8080/forums,13,0,0
+1759887860207,74,POST /auth/login,200,,TG - Forums 1-3,text,true,,1202,264,1,1,http://localhost:8080/auth/login,74,0,1
+1759887860282,12,Post - Insert forum,200,,TG - Forums 1-3,text,true,,1000,675,1,1,http://localhost:8080/forums,12,0,0
+1759887860707,75,POST /auth/login,200,,TG - Forums 1-4,text,true,,1202,264,1,1,http://localhost:8080/auth/login,75,0,1
+1759887860782,12,Post - Insert forum,200,,TG - Forums 1-4,text,true,,1116,791,1,1,http://localhost:8080/forums,12,0,0
+1759887861208,72,POST /auth/login,200,,TG - Forums 1-5,text,true,,1202,264,1,1,http://localhost:8080/auth/login,72,0,1
+1759887861282,11,Post - Insert forum,200,,TG - Forums 1-5,text,true,,1055,730,1,1,http://localhost:8080/forums,11,0,0
+1759887861706,73,POST /auth/login,200,,TG - Forums 1-6,text,true,,1202,264,1,1,http://localhost:8080/auth/login,73,0,2
+1759887861783,13,Post - Insert forum,200,,TG - Forums 1-6,text,true,,1188,863,1,1,http://localhost:8080/forums,13,0,0
+1759887862206,72,POST /auth/login,200,,TG - Forums 1-7,text,true,,1202,264,1,1,http://localhost:8080/auth/login,72,0,1
+1759887862285,10,Post - Insert forum,200,,TG - Forums 1-7,text,true,,1161,836,1,1,http://localhost:8080/forums,10,0,0
+1759887862713,77,POST /auth/login,200,,TG - Forums 1-8,text,true,,1202,264,1,1,http://localhost:8080/auth/login,77,0,1
+1759887862790,11,Post - Insert forum,200,,TG - Forums 1-8,text,true,,1133,808,1,1,http://localhost:8080/forums,11,0,0

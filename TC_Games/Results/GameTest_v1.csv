@@ -1,0 +1,23 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1759887872926,80,POST /auth/login,200,,TG - Games 1-1,text,true,,1202,264,1,1,http://localhost:8080/auth/login,80,0,1
+1759887873007,10,Post - Insert game,200,,TG - Games 1-1,text,true,,603,550,1,1,http://localhost:8080/games,10,0,0
+1759887873435,73,POST /auth/login,200,,TG - Games 1-2,text,true,,1202,264,1,1,http://localhost:8080/auth/login,73,0,1
+1759887873509,8,Post - Insert game,200,,TG - Games 1-2,text,true,,646,594,1,1,http://localhost:8080/games,8,0,0
+1759887873931,73,POST /auth/login,200,,TG - Games 1-3,text,true,,1202,264,1,1,http://localhost:8080/auth/login,73,0,1
+1759887874004,7,Post - Insert game,200,,TG - Games 1-3,text,true,,552,499,1,1,http://localhost:8080/games,7,0,0
+1759887874427,73,POST /auth/login,200,,TG - Games 1-4,text,true,,1202,264,1,1,http://localhost:8080/auth/login,73,0,0
+1759887874500,9,Post - Insert game,200,,TG - Games 1-4,text,true,,563,510,1,1,http://localhost:8080/games,9,0,0
+1759887874927,76,POST /auth/login,200,,TG - Games 1-5,text,true,,1202,264,1,1,http://localhost:8080/auth/login,76,0,1
+1759887875004,11,Post - Insert game,200,,TG - Games 1-5,text,true,,593,540,1,1,http://localhost:8080/games,11,0,0
+1759887875427,75,POST /auth/login,200,,TG - Games 1-6,text,true,,1202,264,1,1,http://localhost:8080/auth/login,75,0,1
+1759887875502,9,Post - Insert game,200,,TG - Games 1-6,text,true,,622,569,1,1,http://localhost:8080/games,9,0,0
+1759887875926,75,POST /auth/login,200,,TG - Games 1-7,text,true,,1202,264,1,1,http://localhost:8080/auth/login,75,0,1
+1759887876001,9,Post - Insert game,200,,TG - Games 1-7,text,true,,594,540,1,1,http://localhost:8080/games,9,0,0
+1759887876427,72,POST /auth/login,200,,TG - Games 1-8,text,true,,1202,264,1,1,http://localhost:8080/auth/login,72,0,1
+1759887876500,7,Post - Insert game,200,,TG - Games 1-8,text,true,,547,494,1,1,http://localhost:8080/games,7,0,0
+1759887876926,75,POST /auth/login,200,,TG - Games 1-9,text,true,,1202,264,1,1,http://localhost:8080/auth/login,75,0,1
+1759887877001,9,Post - Insert game,200,,TG - Games 1-9,text,true,,589,537,1,1,http://localhost:8080/games,9,0,0
+1759887877427,72,POST /auth/login,200,,TG - Games 1-10,text,true,,1202,264,1,1,http://localhost:8080/auth/login,72,0,1
+1759887877499,8,Post - Insert game,200,,TG - Games 1-10,text,true,,562,508,1,1,http://localhost:8080/games,8,0,0
+1759887877939,78,POST /auth/login,200,,TG - Games 1-11,text,true,,1202,264,1,1,http://localhost:8080/auth/login,78,0,2
+1759887878018,9,Post - Insert game,200,,TG - Games 1-11,text,true,,644,592,1,1,http://localhost:8080/games,9,0,0
