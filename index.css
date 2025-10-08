@@ -99,3 +99,79 @@ nav.nav-cards {
   margin-bottom: 0.35rem;
   display: inline-block;
 }
+
+/* === KPI v2.1 — Panel unificado y legible === */
+.kpi2-panel{
+  --text:#e6ebff; --muted:#9aa4c7; --accent:#6aa2ff; --accent-2:#77ffc0;
+  background: radial-gradient(1200px 800px at 10% -10%, #1c2651 0%, #0b1020 60%);
+  color:var(--text);
+  border:1px solid rgba(255,255,255,0.06);
+  border-radius:18px;
+  padding:16px 18px;
+  box-shadow:0 1px 1px rgba(0,0,0,.2), inset 0 1px 0 rgba(255,255,255,.03);
+  margin-top:1rem;
+}
+.kpi2-head{
+  display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.2px;margin:0 0 8px;
+}
+.kpi2-head::before{
+  content:"";width:10px;height:10px;border-radius:50%;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  box-shadow:0 0 10px rgba(106,162,255,.8);
+}
+
+/* Secciones con división clara (orden: Percentiles → Throughput → Confiabilidad) */
+.kpi2-group{margin-top:12px;padding-top:12px;border-top:1px solid #2a376a;}
+.kpi2-group:first-of-type{margin-top:2px;padding-top:0;border-top:0;}
+.kpi2-subttl{
+  font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.12em;margin:0 0 6px;
+}
+
+/* Chips de percentiles */
+.kpi2-chips{display:flex;flex-wrap:wrap;gap:8px;}
+.kpi2-chip{
+  background:#1a2344;border:1px solid #253061;color:var(--text);
+  border-radius:999px;padding:6px 12px;font-size:12px;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.03);
+}
+
+/* Badges de throughput */
+.kpi2-row{display:flex;flex-wrap:wrap;align-items:center;gap:12px;}
+.kpi2-badge{
+  background:linear-gradient(180deg,#1a2344,#141b33);
+  border:1px solid #2a376a;color:var(--text);
+  border-radius:10px;padding:8px 12px;font-size:13px;
+}
+
+/* Barra éxito/error con etiqueta */
+.kpi2-progress{
+  position:relative;width:100%;max-width:360px;height:20px;
+  border-radius:8px;overflow:hidden;border:1px solid #2a376a;background:#0f1630;
+  display:flex;box-shadow:inset 0 1px 0 rgba(255,255,255,.04);
+}
+.kpi2-progress .okSeg{background:#12c48b;}
+.kpi2-progress .errSeg{background:#ff5565;}
+.kpi2-note{font-size:12px;color:#9aa4c7;margin-left:6px}
+
+/* Etiqueta centrada de la barra (éxito/error) */
+.kpi2-progress::after{
+  content:attr(data-label);position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  font-size:11px;color:#e6ebff;text-shadow:0 1px 2px rgba(0,0,0,.5);pointer-events:none;
+  color:#fff;
+  font-weight:700;
+  letter-spacing:.2px;
+  text-shadow:
+    0 2px 4px rgba(0,0,0,.55),
+    0 0 2px rgba(0,0,0,.75);
+  -webkit-text-stroke: .4px rgba(0,0,0,.35); /* mejora bordes en WebKit/Chromium */
+}
+
+/* Reparto sin inline styles */
+.kpi2-progress .okSeg,.kpi2-progress .errSeg{flex-basis:0;}
+.kpi2-progress.ok-only .okSeg{flex:1000}.kpi2-progress.ok-only .errSeg{flex:0}
+.kpi2-progress.ratio-999-01 .okSeg{flex:999}.kpi2-progress.ratio-999-01 .errSeg{flex:1}
+/* agrega más si un día hay 98/2, 95/5, etc. */
+
+/* Asegura visibilidad de errores muy pequeños (<1%) */
+.kpi2-progress:not(.ok-only) .errSeg { min-width: 3px; }
+

@@ -7,39 +7,166 @@
 
   <link rel="stylesheet" href="./assets/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="index.css" />
-
 </head>
 <body>
   <main class="viewport-center">
-    <!-- Solo navbar como foco de atención -->
     <nav class="nav-cards" role="navigation" aria-label="Dashboard links">
       <div class="grid-3x2">
-        <!-- Item 1 -->
+
+        <!-- Item 1 – LOGIN -->
         <a class="nav-card" href="./TC_Login/Results/Reports/index.html" aria-label="Abrir Sección 1">
           <span class="eyebrow">Prueba #1</span>
           <h2 class="title">Reporte de inicio de sesión</h2>
-          <p class="desc">...</p>
+          <p class="desc">Muestra un comportamiento consistente bajo la carga aplicada, no se observa degradación.</p>
+
+          <section id="kpi-login" class="kpi2-panel">
+            <div class="kpi2-head">KPIs</div>
+
+            <div class="kpi2-group">
+              <div class="kpi2-subttl">Percentiles</div>
+              <div class="kpi2-chips">
+                <span class="kpi2-chip">p50: <strong>71 ms</strong></span>
+                <span class="kpi2-chip">p90: <strong>73 ms</strong></span>
+                <span class="kpi2-chip">p95: <strong>74 ms</strong></span>
+                <span class="kpi2-chip">p99: <strong>79 ms</strong></span>
+              </div>
+            </div>
+
+            <div class="kpi2-group">
+              <div class="kpi2-subttl">Throughput</div>
+              <div class="kpi2-row">
+                <div class="kpi2-badge">Medio: <strong>3.32 req/s</strong></div>
+                <div class="kpi2-badge">Pico: <strong>4.00 req/s</strong></div>
+              </div>
+            </div>
+
+            <div class="kpi2-group">
+              <div class="kpi2-subttl">Confiabilidad</div>
+              <div class="kpi2-row">
+                <div class="kpi2-progress ratio-999-01" data-label="Éxito 99.9% · Error 0.1%">
+                  <div class="okSeg"></div><div class="errSeg"></div>
+                </div>
+                <div class="kpi2-note">Distribución de respuestas</div>
+              </div>
+            </div>
+          </section>
         </a>
 
-        <!-- Item 2 -->
+        <!-- Item 2 – SIGNUP -->
         <a class="nav-card" href="./TC_SignUp/Results/Reports/index.html" aria-label="Abrir Sección 2">
           <span class="eyebrow">Prueba #2</span>
-          <h2 class="title">Reporte de registro de Usuarios</h2>
-          <p class="desc">...</p>
+          <h2 class="title">Reporte de registro de usuarios</h2>
+          <p class="desc">Muestra un comportamiento consistente y sin fallos.</p>
+
+          <section id="kpi-signup" class="kpi2-panel">
+            <div class="kpi2-head">KPIs</div>
+
+            <div class="kpi2-group">
+              <div class="kpi2-subttl">Percentiles</div>
+              <div class="kpi2-chips">
+                <span class="kpi2-chip">p50: <strong>73 ms</strong></span>
+                <span class="kpi2-chip">p90: <strong>75 ms</strong></span>
+                <span class="kpi2-chip">p95: <strong>77 ms</strong></span>
+                <span class="kpi2-chip">p99: <strong>86 ms</strong></span>
+              </div>
+            </div>
+
+            <div class="kpi2-group">
+              <div class="kpi2-subttl">Throughput</div>
+              <div class="kpi2-row">
+                <div class="kpi2-badge">Medio: <strong>1.66 req/s</strong></div>
+                <div class="kpi2-badge">Pico: <strong>2.00 req/s</strong></div>
+              </div>
+            </div>
+
+            <div class="kpi2-group">
+              <div class="kpi2-subttl">Confiabilidad</div>
+              <div class="kpi2-row">
+                <div class="kpi2-progress ok-only" data-label="Éxito 100%">
+                  <div class="okSeg"></div><div class="errSeg"></div>
+                </div>
+                <div class="kpi2-note">Distribución de respuestas</div>
+              </div>
+            </div>
+          </section>
         </a>
 
-        <!-- Item 3 -->
+        <!-- Item 3 – GAMES -->
         <a class="nav-card" href="./TC_Games/Results/Reports/index.html" aria-label="Abrir Sección 3">
           <span class="eyebrow">Prueba #3</span>
-          <h2 class="title">Reporte de Juegos</h2>
-          <p class="desc">...</p>
+          <h2 class="title">Reporte de juegos</h2>
+          <p class="desc">Muestra un comportamiento estable, sin errores, carga moderada-baja, sin evidencia de saturación.</p>
+
+          <section id="kpi-games" class="kpi2-panel">
+            <div class="kpi2-head">KPIs</div>
+
+            <div class="kpi2-group">
+              <div class="kpi2-subttl">Percentiles</div>
+              <div class="kpi2-chips">
+                <span class="kpi2-chip">p50: <strong>41.5 ms</strong></span>
+                <span class="kpi2-chip">p90: <strong>75.9 ms</strong></span>
+                <span class="kpi2-chip">p95: <strong>77.9 ms</strong></span>
+                <span class="kpi2-chip">p99: <strong>79.6 ms</strong></span>
+              </div>
+            </div>
+
+            <div class="kpi2-group">
+              <div class="kpi2-subttl">Throughput</div>
+              <div class="kpi2-row">
+                <div class="kpi2-badge">Medio: <strong>3.14 req/s</strong></div>
+                <div class="kpi2-badge">Pico: <strong>4.00 req/s</strong></div>
+              </div>
+            </div>
+
+            <div class="kpi2-group">
+              <div class="kpi2-subttl">Confiabilidad</div>
+              <div class="kpi2-row">
+                <div class="kpi2-progress ok-only" data-label="Éxito 100%">
+                  <div class="okSeg"></div><div class="errSeg"></div>
+                </div>
+                <div class="kpi2-note">Distribución de respuestas</div>
+              </div>
+            </div>
+          </section>
         </a>
 
-        <!-- Item 4 -->
+        <!-- Item 4 – FORUMS -->
         <a class="nav-card" href="./TC_Forums/Results/Reports/index.html" aria-label="Abrir Sección 4">
           <span class="eyebrow">Prueba #4</span>
-          <h2 class="title">Reporte de Foros</h2>
-          <p class="desc">...</p>
+          <h2 class="title">Reporte de foros</h2>
+          <p class="desc">Muestra latencias bajas y consistentes, no hay saturación ni degradación.</p>
+
+          <section id="kpi-forums" class="kpi2-panel">
+            <div class="kpi2-head">KPIs</div>
+
+            <div class="kpi2-group">
+              <div class="kpi2-subttl">Percentiles</div>
+              <div class="kpi2-chips">
+                <span class="kpi2-chip">p50: <strong>42.5 ms</strong></span>
+                <span class="kpi2-chip">p90: <strong>76.0 ms</strong></span>
+                <span class="kpi2-chip">p95: <strong>77.8 ms</strong></span>
+                <span class="kpi2-chip">p99: <strong>79.6 ms</strong></span>
+              </div>
+            </div>
+
+            <div class="kpi2-group">
+              <div class="kpi2-subttl">Throughput</div>
+              <div class="kpi2-row">
+                <div class="kpi2-badge">Medio: <strong>4.00 req/s</strong></div>
+                <div class="kpi2-badge">Pico: <strong>4.00 req/s</strong></div>
+              </div>
+            </div>
+
+            <div class="kpi2-group">
+              <div class="kpi2-subttl">Confiabilidad</div>
+              <div class="kpi2-row">
+                <div class="kpi2-progress ok-only" data-label="Éxito 100%">
+                  <div class="okSeg"></div><div class="errSeg"></div>
+                </div>
+                <div class="kpi2-note">Distribución de respuestas</div>
+              </div>
+            </div>
+          </section>
         </a>
 
         <!-- Item 5 -->
@@ -55,11 +182,11 @@
           <h2 class="title">Reporte de ...</h2>
           <p class="desc">...</p>
         </a>
+
       </div>
     </nav>
   </main>
 
-  <!-- Bootstrap Bundle -->
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
