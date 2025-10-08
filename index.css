@@ -267,6 +267,11 @@ nav.nav-cards {
 .kpi2-progress:not(.ok-only) .errSeg { 
   min-width: 3px;
   margin-bottom: 3px;
-  border-radius: 6px; 
 }
 
+/* Ratio específico para Reminders: 88.05% ok / 11.95% error */
+.kpi2-progress.ratio-882-118 .okSeg { flex: 882; }
+.kpi2-progress.ratio-882-118 .errSeg { flex: 115; }
+
+/* Mantén también el mínimo visible para errores pequeños (si no lo tenías) */
+.kpi2-progress:not(.ok-only) .errSeg { min-width: 3px; }

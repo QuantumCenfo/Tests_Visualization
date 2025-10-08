@@ -196,20 +196,45 @@
           </section>
         </a>
 
-        <!-- Item 5 -->
-        <a class="nav-card" href="#" aria-label="Abrir Sección 5">
+        <!-- Item 5 - REMINDERS-->
+        <a class="nav-card" href="./TC_Reminders/Results/Reporte/index.html" aria-label="Abrir Sección 5">
           <span class="eyebrow">Prueba #5</span>
-          <h2 class="title">Reporte de ...</h2>
-          <p class="desc">...</p>
-        </a>
+          <h2 class="title">Reporte de recordatorios</h2>
+          <p class="desc">Mantiene cola moderada y sin caídas. Los errores están contemplados en el diseño de la prueba.</p>
 
-        <!-- Item 6 -->
-        <a class="nav-card" href="#" aria-label="Abrir Sección 6">
-          <span class="eyebrow">Prueba #6</span>
-          <h2 class="title">Reporte de ...</h2>
-          <p class="desc">...</p>
-        </a>
+          <section id="kpi-reminders" class="kpi2-panel">
+            <div class="kpi2-head">KPIs</div>
 
+            <div class="kpi2-group">
+              <div class="kpi2-subttl">Percentiles</div>
+              <div class="kpi2-chips">
+                <span class="kpi2-chip">p50: <strong>52.5 ms</strong></span>
+                <span class="kpi2-chip">p90: <strong>97 ms</strong></span>
+                <span class="kpi2-chip">p95: <strong>102 ms</strong></span>
+                <span class="kpi2-chip">p99: <strong>115 ms</strong></span>
+              </div>
+            </div>
+
+            <div class="kpi2-group">
+              <div class="kpi2-subttl">Throughput</div>
+              <div class="kpi2-row">
+                <div class="kpi2-badge">Medio: <strong>6.64 req/s</strong></div>
+                <div class="kpi2-badge">Pico: <strong>7.00 req/s</strong></div>
+              </div>
+            </div>
+
+            <div class="kpi2-group">
+              <div class="kpi2-subttl">Confiabilidad</div>
+              <div class="kpi2-row">
+                <!-- 88.05% éxito · 11.95% error -->
+                <div class="kpi2-progress ratio-882-118" data-label="Éxito 88.05% · Error 11.95%">
+                  <div class="okSeg"></div><div class="errSeg"></div>
+                </div>
+                <div class="kpi2-note">Distribución de respuestas</div>
+              </div>
+            </div>
+          </section>
+        </a>
       </div>
     </nav>
   </main>
